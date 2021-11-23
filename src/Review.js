@@ -31,7 +31,8 @@ const Review = () => {
   
 
   const randomPerson = () => {
-  
+    let randomNumber = Math.random()*people.length;
+
 }
 
   return (
@@ -53,7 +54,7 @@ const Review = () => {
           <FaChevronRight />
         </button>
       </div>
-      <button className="random-btn">suprise me</button>
+      <button className="random-btn" onClick={randomPerson}> suprise me</button>
     </article>
   );
 };
